@@ -15,10 +15,19 @@ function loadHeader() {
     <header class="site-header">
         <div class="logo">
             <a href="${currentPage === 'index.html' ? 'index.html' : '../index.html'}">
-                <span class="name">Yash Sharma</span>
+                <span class="desktop-name">Yash Sharma</span>
+                <span class="mobile-name">YS</span>
             </a>
         </div>
-        <nav class="main-nav">
+        <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+            <span class="sr-only">Menu</span>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </button>
+        <nav class="main-nav" id="primary-navigation">
             <ul>
                 <li><a href="${currentPage === 'index.html' ? 'pages/' : ''}journey.html" class="${currentPage === 'journey.html' ? 'active' : ''}">My Journey</a></li>
                 <li><a href="${currentPage === 'index.html' ? 'pages/' : ''}projects.html" class="${currentPage === 'projects.html' ? 'active' : ''}">Personal Projects</a></li>
@@ -28,6 +37,15 @@ function loadHeader() {
         </nav>
     </header>
   `;
+  
+  // Add event listener for hamburger menu toggle
+  document.querySelector('.mobile-nav-toggle').addEventListener('click', function() {
+    const navigation = document.getElementById('primary-navigation');
+    const isExpanded = this.getAttribute('aria-expanded') === 'true';
+    
+    this.setAttribute('aria-expanded', !isExpanded);
+    navigation.classList.toggle('nav-open');
+  });
 }
 
 function loadFooter() {
