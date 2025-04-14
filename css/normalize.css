@@ -1,0 +1,79 @@
+/* 
+This file is a CSS reset that helps ensure consistent styling across different browsers by normalizing default styles. 
+*/
+
+html {
+    line-height: 1.15; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+body {
+    margin: 0; /* 3 */
+}
+
+h1 {
+    font-size: 2em; /* 4 */
+    margin: 0.67em 0; /* 5 */
+}
+
+hr {
+    box-sizing: content-box; /* 6 */
+    height: 0; /* 7 */
+    overflow: visible; /* 8 */
+}
+
+pre {
+    font-family: monospace, monospace; /* 9 */
+    font-size: 1em; /* 10 */
+}
+
+a {
+    background-color: transparent; /* 11 */
+}
+
+abbr[title] {
+    border-bottom: none; /* 12 */
+    text-decoration: underline; /* 13 */
+    text-decoration: underline dotted; /* 14 */
+}
+
+b,
+strong {
+    font-weight: bolder; /* 15 */
+}
+
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, monospace; /* 16 */
+    font-size: 1em; /* 17 */
+}
+
+small {
+    font-size: 80%; /* 18 */
+}
+
+sub {
+    font-size: 75%; /* 19 */
+    line-height: 0; /* 20 */
+    position: relative; /* 21 */
+    vertical-align: baseline; /* 22 */
+}
+
+sup {
+    font-size: 75%; /* 23 */
+    line-height: 0; /* 24 */
+    position: relative; /* 25 */
+    vertical-align: baseline; /* 26 */
+}
+
+table {
+    border-collapse: collapse; /* 27 */
+    border-spacing: 0; /* 28 */
+}
+
+td,
+th {
+    padding: 0; /* 29 */
+}
