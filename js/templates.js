@@ -1,6 +1,6 @@
 function loadHeader() {
   // Get the current page filename
-  const currentPage = window.location.pathname.split('/').pop();
+  const currentPage = window.location.pathname.split('/').pop() || 'index.html';
   
   // Get the current page title
   const pageTitle = document.title.toLowerCase();
@@ -11,10 +11,14 @@ function loadHeader() {
   const isHobbies = pageTitle.includes('hobbies') || currentPage === 'hobbies.html';
   const isContact = pageTitle.includes('contact') || currentPage === 'contact.html';
 
+  // Determine base path for links
+  const isIndex = currentPage === 'index.html';
+  const basePath = isIndex ? 'pages/' : '';
+
   document.getElementById("header-placeholder").innerHTML = `
     <header class="site-header">
         <div class="logo">
-            <a href="${currentPage === 'index.html' ? 'index.html' : '../index.html'}">
+            <a href="${isIndex ? 'index.html' : '../index.html'}">
                 <span class="desktop-name">Yash Sharma</span>
                 <span class="mobile-name">YS</span>
             </a>
@@ -29,10 +33,10 @@ function loadHeader() {
         </button>
         <nav class="main-nav" id="primary-navigation">
             <ul>
-                <li><a href="${currentPage === 'index.html' ? 'pages/' : ''}journey.html" class="${currentPage === 'journey.html' ? 'active' : ''}">My Journey</a></li>
-                <li><a href="${currentPage === 'index.html' ? 'pages/' : ''}projects.html" class="${currentPage === 'projects.html' ? 'active' : ''}">Personal Projects</a></li>
-                <li><a href="${currentPage === 'index.html' ? 'pages/' : ''}hobbies.html" class="${currentPage === 'hobbies.html' ? 'active' : ''}">Hobbies</a></li>
-                <li><a href="${currentPage === 'index.html' ? 'pages/' : ''}contact.html" class="${currentPage === 'contact.html' ? 'active' : ''}">Contact Me</a></li>
+                <li><a href="${basePath}journey.html" class="${isJourney ? 'active' : ''}">My Journey</a></li>
+                <li><a href="${basePath}projects.html" class="${isProjects ? 'active' : ''}">Personal Projects</a></li>
+                <li><a href="${basePath}hobbies.html" class="${isHobbies ? 'active' : ''}">Hobbies</a></li>
+                <li><a href="${basePath}contact.html" class="${isContact ? 'active' : ''}">Contact Me</a></li>
             </ul>
         </nav>
     </header>
@@ -46,12 +50,4 @@ function loadHeader() {
     this.setAttribute('aria-expanded', !isExpanded);
     navigation.classList.toggle('nav-open');
   });
-}
-
-function loadFooter() {
-  document.getElementById("footer-placeholder").innerHTML = `
-    <footer>
-        <p>&copy; 2023 My Portfolio. All rights reserved.</p>
-    </footer>
-  `;
 }
