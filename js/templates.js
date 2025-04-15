@@ -51,3 +51,11 @@ function loadHeader() {
     navigation.classList.toggle('nav-open');
   });
 }
+
+function loadFooter() {
+  document.getElementById("footer-placeholder").innerHTML = `
+    <footer>
+        <p>&copy; 2025 Yash Sharma. All rights reserved.  All opinions expressed are my own. </p>
+    </footer>
+  `;
+}
