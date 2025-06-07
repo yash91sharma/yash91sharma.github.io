@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,24 +8,40 @@
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/main.css">
 </head>
+
 <body>
     <div id="header-placeholder"></div>
-    
+
     <main>
         <section>
             <h2>Personal Projects</h2>
-            <!-- Page specific content -->
+            <ul class="project-list">
+                <li class="project-item">
+                    <a href="maltopic.html" class="project-link">
+                        <img src="../assets/maltopic.png" alt="MALTopic logo" class="project-thumb"
+                            style="width:80px;height:80px;object-fit:cover;">
+                        <div class="project-info">
+                            <h3>MALTopic: Multi-Agent LLM Topic Modeling Framework</h3>
+                            <span class="project-date">May 2025</span>
+                            <p class="project-brief">Published at World AI-IoT Congress 2025. Making topic modeling
+                                efficient, easy, and smart with LLMs. 🤖✨ Unlock smarter insights, effortlessly!</p>
+                        </div>
+                    </a>
+                </li>
+                <!-- Add more projects here in the future -->
+            </ul>
         </section>
     </main>
-    
+
     <div id="footer-placeholder"></div>
-    
+
     <script src="../js/templates.js"></script>
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
+        document.addEventListener("DOMContentLoaded", function () {
             loadHeader();
             loadFooter();
         });
     </script>
 </body>
+
 </html>

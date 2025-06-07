@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MALTopic - Project Details</title>
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+  <div id="header-placeholder"></div>
+  <main>
+    <section>
+      <div style="display:flex; align-items:center; gap:2em; flex-wrap:wrap;">
+        <img src="../assets/maltopic.png" alt="MALTopic logo" class="project-detail-image"
+          style="max-width:180px; margin-bottom:0; flex-shrink:0;">
+        <div>
+          <h2 style="font-size:2em; color:var(--main-color, #2a4d8f); margin:0;">MALTopic</h2>
+          <span class="project-date" style="font-size:1em; color:#888; margin-top:0.1em;">Published: May 2025</span>
+        </div>
+      </div>
+      <div style="margin-top:1.5em; text-align:justify;">
+        <p>MALTopic was published as a research paper at the <a href="https://worldaiiotcongress.org/" target="_blank"
+            rel="noopener noreferrer">World AI IoT Congress 2025</a>. This research/concept was later converted into an
+          actual
+          implementation and published as a python library.</p>
+        <p>MALTopic introduces a multi-agent LLM framework for topic modeling that goes beyond traditional methods by
+          integrating both structured and unstructured survey data. The system uses specialized agents to enrich,
+          extract, and refine topics, resulting in more coherent, diverse, and human-readable themes. This approach
+          makes it especially effective for analyzing complex survey responses, outperforming classic models like LDA
+          and BERTopic in interpretability and contextual relevance.</p>
+        <nav aria-label="Project Links">
+          <ul class="project-links"
+            style="list-style:none; padding:0; margin:1.5em 0 0 0; display:flex; flex-direction:row; align-items:center; gap:1.2em; justify-content:flex-start;">
+            <li>
+              <span class="project-link-btn" style="cursor:default; opacity:0.7; pointer-events:none;">Read the Paper
+                (link upcoming)</span>
+            </li>
+            <li>
+              <a href="https://github.com/yash91sharma/MALTopic-py" target="_blank" rel="noopener noreferrer"
+                class="project-link-btn">GitHub
+                Repo</a>
+            </li>
+            <li>
+              <a href="https://pypi.org/project/maltopic/" target="_blank" rel="noopener noreferrer"
+                class="project-link-btn">Python Library
+                (PyPI)</a>
+            </li>
+          </ul>
+        </nav>
+        <p>Why did I build this? Because LLMs are remarkably adept at understanding natural language—something
+          traditional topic modeling frameworks simply can’t match. My own challenges with survey data analysis
+          highlighted this gap and sparked my curiosity. Diving into LLMs, exploring the latest research, and
+          recognizing the untapped potential in this space inspired me to contribute something new. The rapid evolution
+          of LLM technology and the clear need for better solutions drove me to develop MALTopic and share these
+          insights through a research paper.</p>
+        <p>If you find MALTopic interesting or see ways it could be improved, I’d love for you to get involved! Feel
+          free to contribute updates, suggest enhancements, or open issues on the <a
+            href="https://github.com/yash91sharma/MALTopic-py" target="_blank" rel="noopener noreferrer">GitHub repo</a>
+          to start a
+          conversation !!!</p>
+      </div>
+    </section>
+  </main>
+  <div id="footer-placeholder"></div>
+  <script src="../js/templates.js" defer></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      loadHeader();
+      loadFooter();
+    });
+  </script>
+</body>
+
+</html>
