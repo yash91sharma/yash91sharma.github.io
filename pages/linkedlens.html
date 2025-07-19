@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LinkedLens - Project Details</title>
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+  <div id="header-placeholder"></div>
+  <main>
+    <section>
+      <div style="display:flex; align-items:center; gap:2em; flex-wrap:wrap;">
+        <img src="../assets/LinkedLens.png" alt="LinkedLens logo" class="project-detail-image"
+          style="max-width:180px; margin-bottom:0; flex-shrink:0;">
+        <div>
+          <h2 style="font-size:2em; color:var(--main-color, #2a4d8f); margin:0;">LinkedLens</h2>
+          <span class="project-date" style="font-size:1em; color:#888; margin-top:0.1em;">Released: July 2025</span>
+        </div>
+      </div>
+      <div style="margin-top:1.5em; text-align:justify;">
+        <p>LinkedLens is a Chrome extension designed to enhance your LinkedIn browsing experience by automatically
+          categorizing and tagging posts as you scroll through your feed. It helps you identify different types of
+          content at a glance, making your LinkedIn experience more organized and efficient.</p>
+
+        <p>The extension uses AI to analyze LinkedIn posts and categorize them based on your custom-defined categories.
+          You can choose from three different AI backends: Ollama (local, free, and private), OpenAI API, or Google's
+          Gemini API. This flexibility allows you to use the solution that best fits your privacy and performance
+          requirements.</p>
+
+        <h3 style="color:var(--main-color, #2a4d8f); margin-top:2em;">Motivation</h3>
+        <p>Why did I build this? LinkedIn can be incredibly useful for professional networking and staying updated with
+          industry trends, but the feed often gets cluttered with different types of content - some valuable, some not
+          so much. I wanted a way to quickly identify the type of content I'm looking at without having to read through
+          every post. LinkedLens solves this by providing instant visual categorization, making LinkedIn browsing more
+          efficient and enjoyable.</p>
+
+        <h3 style="color:var(--main-color, #2a4d8f); margin-top:2em;">Key Features</h3>
+        <ul style="margin-left:1.5em;">
+          <li><strong>Automatic Post Categorization:</strong> AI-powered analysis of LinkedIn posts with colored tags
+          </li>
+          <li><strong>Multiple LLM Backends:</strong> Support for Ollama (local), OpenAI API, and Gemini API</li>
+          <li><strong>Custom Categories:</strong> Define your own categories and descriptions for personalized filtering
+          </li>
+          <li><strong>Real-time Tagging:</strong> Posts are tagged as you browse with colored indicators</li>
+          <li><strong>Privacy-First Option:</strong> Use Ollama for completely local processing</li>
+          <li><strong>Easy Installation:</strong> Simple Chrome extension setup</li>
+        </ul>
+
+        <nav aria-label="Project Links">
+          <ul class="project-links"
+            style="list-style:none; padding:0; margin:1.5em 0 0 0; display:flex; flex-direction:row; align-items:center; gap:1.2em; justify-content:flex-start;">
+            <li>
+              <a href="https://github.com/yash91sharma/LinkedLens" target="_blank" rel="noopener noreferrer"
+                class="project-link-btn">GitHub Repo</a>
+            </li>
+            <li>
+              <a href="https://github.com/yash91sharma/LinkedLens/releases" target="_blank" rel="noopener noreferrer"
+                class="project-link-btn">Download Extension</a>
+            </li>
+            <li>
+              <a href="https://github.com/yash91sharma/LinkedLens#how-to-use" target="_blank" rel="noopener noreferrer"
+                class="project-link-btn">Installation Guide</a>
+            </li>
+          </ul>
+        </nav>
+
+        <h3 style="color:var(--main-color, #2a4d8f); margin-top:2em;">How It Works</h3>
+        <p>Once installed and configured, LinkedLens runs in the background while you browse LinkedIn. It automatically
+          analyzes each post using your chosen AI backend and applies colored tags to categorize content. You define the
+          categories that matter to you - whether it's "Industry News," "Job Postings," "Thought Leadership," or "Spam"
+          - and LinkedLens will help you quickly identify what type of content you're looking at.</p>
+
+        <p>The extension supports three AI backends to suit different needs:</p>
+        <ul style="margin-left:1.5em;">
+          <li><strong>Ollama:</strong> Run everything locally on your machine for complete privacy and no API costs</li>
+          <li><strong>OpenAI API:</strong> Use GPT models for high-quality categorization</li>
+          <li><strong>Gemini API:</strong> Google's AI models as an alternative cloud-based option</li>
+        </ul>
+
+        <p style="font-size:1.08em;">LinkedLens is open source and welcomes contributions! Whether you want to add
+          new features, improve existing functionality, or report bugs, your input helps make the extension better for
+          everyone. 🤝<br>
+          Check out the <a href="https://github.com/yash91sharma/LinkedLens" target="_blank"
+            rel="noopener noreferrer">GitHub repository</a> to get involved!
+        </p>
+      </div>
+    </section>
+  </main>
+  <div id="footer-placeholder"></div>
+  <script src="../js/templates.js" defer></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      loadHeader();
+      loadFooter();
+    });
+  </script>
+</body>
+
+</html>
