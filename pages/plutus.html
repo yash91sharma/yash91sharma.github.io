@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plutus - Personal Finance App</title>
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+  <div id="header-placeholder"></div>
+  <main>
+    <section>
+      <div style="display:flex; align-items:center; gap:2em; flex-wrap:wrap;">
+        <img src="../assets/plutus.png" alt="Plutus logo" class="project-detail-image"
+          style="max-width:180px; margin-bottom:0; flex-shrink:0;">
+        <div>
+          <h2 style="font-size:2em; color:var(--main-color, #2a4d8f); margin:0;">Plutus</h2>
+          <span class="project-date" style="font-size:1em; color:#888; margin-top:0.1em;">Released: Jan 2025</span>
+        </div>
+      </div>
+      <div style="margin-top:1.5em; text-align:justify;">
+        <h3 style="color:var(--main-color, #2a4d8f); margin-top:2em;">What is Plutus</h3>
+        <p>
+          Plutus is a personal finance and investment tracking platform. It helps me understand my finances in depth,
+          and take data driven decisions.</p>
+
+        <h3 style="color:var(--main-color, #2a4d8f); margin-top:2em;">Motivation</h3>
+        <p>
+          There are numerous personal finance apps available, but I wanted something
+          seamless, scalable, and tailored to my needs. Plutus is my attempt to build a dedicated platform that offers
+          the visualizations and analytics I want, while also serving as a full-stack engineering playground.
+          Building Plutus lets me explore every layer of product development, from ideation and design to backend,
+          frontend, machine learning, and deployment.</p>
+
+        <h3 style="color:var(--main-color, #2a4d8f); margin-top:2em;">Technical Architecture</h3>
+        <ul style="margin-left: 1.5em;">
+          <li><strong>Frontend:</strong> React, TypeScript, Material UI, and Redux for state management</li>
+          <li><strong>Backend:</strong> Microservice architecture with FastAPI, Python, and SQLite</li>
+          <li><strong>Services:</strong> Main application logic service + dedicated market data service</li>
+          <li><strong>Authentication:</strong> Auth0 for secure user management</li>
+          <li><strong>Infrastructure:</strong> Docker, Traefik, Cloudflare, and Google Cloud Platform</li>
+          <li><strong>Deployment:</strong> Preprod and prod</li>
+          <li><strong>Monitoring:</strong> Logging and performance tracking with Grafana</li>
+        </ul>
+
+        <nav aria-label="Project Links">
+          <ul class="project-links"
+            style="list-style:none; padding:0; margin:1.5em 0 0 0; display:flex; flex-direction:row; align-items:center; gap:1.2em; justify-content:flex-start;">
+            <li>
+              <a href="https://plutus.yashrma.xyz/" target="_blank" rel="noopener noreferrer"
+                class="project-link-btn">Live Application</a>
+            </li>
+            <li>
+              <a href="https://github.com/yash91sharma/plutus/blob/main/README.md" target="_blank"
+                rel="noopener noreferrer" class="project-link-btn">Readme on GitHub</a>
+            </li>
+            <li>
+              <a href="https://github.com/yash91sharma/plutus/issues" target="_blank" rel="noopener noreferrer"
+                class="project-link-btn">Report Issues / Request Features</a>
+            </li>
+          </ul>
+        </nav>
+        <p style="font-size:1.08em; margin-top:2em;">Want to see it in action? <a href="https://plutus.yashrma.xyz/"
+            target="_blank" rel="noopener noreferrer">Try the live app</a> or <a
+            href="https://github.com/yash91sharma/plutus/blob/main/README.md" target="_blank"
+            rel="noopener noreferrer">explore the README</a></p>
+      </div>
+    </section>
+  </main>
+  <div id="footer-placeholder"></div>
+  <script src="../js/templates.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      loadHeader();
+      loadFooter();
+    });
+  </script>
+</body>
+
+</html>
