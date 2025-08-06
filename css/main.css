@@ -327,7 +327,56 @@ footer {
   letter-spacing: 0.025em;
 }
 
-/* Responsive design for contact links */
+/* Video embed styles for responsive YouTube videos */
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Hobby/project grid styles */
+.hobby-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2em;
+  margin: 1.5em 0;
+}
+
+.hobby-card {
+  background: #f9f9f9;
+  padding: 1em;
+  border-radius: 8px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.hobby-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.hobby-card h4 {
+  margin: 0.5em 0 0.2em 0;
+  color: #333;
+  font-size: 1.1em;
+}
+
+.hobby-card p {
+  margin: 0;
+  color: #666;
+  font-size: 0.95em;
+}
+
 @media (max-width: 768px) {
   .site-header {
     padding: 1rem;
@@ -415,5 +464,14 @@ footer {
     justify-content: center;
     padding: 1rem 1.5rem;
     font-size: 1rem;
+  }
+
+  .hobby-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5em;
+  }
+
+  .video-container {
+    padding-bottom: 56.25%;
   }
 }

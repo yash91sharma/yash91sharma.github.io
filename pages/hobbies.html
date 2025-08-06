@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,24 +8,41 @@
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/main.css">
 </head>
+
 <body>
     <div id="header-placeholder"></div>
-    
+
     <main>
         <section>
-            <h2>Hobbies</h2>
-            <!-- Page specific content -->
+            <h2>My Hobbies</h2>
+            <ul class="project-list">
+                <li class="project-item">
+                    <a href="woodworking.html" class="project-link">
+                        <img src="../assets/woodworking.png" alt="Woodworking and Furniture Making"
+                            class="project-thumb"
+                            style="width:80px;height:80px;object-fit:cover;background:#f5f5f5;border-radius:12px;">
+                        <div class="project-info">
+                            <h3>Woodworking & Furniture Making</h3>
+                            <span class="project-date">Since 2021</span>
+                            <p class="project-brief">I love building fine furniture and utility stuff around the house.
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <!-- Add more hobbies here in the future -->
+            </ul>
         </section>
     </main>
-    
+
     <div id="footer-placeholder"></div>
-    
+
     <script src="../js/templates.js"></script>
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
+        document.addEventListener("DOMContentLoaded", function () {
             loadHeader();
             loadFooter();
         });
     </script>
 </body>
+
 </html>
