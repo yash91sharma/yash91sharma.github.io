@@ -1,0 +1,18 @@
+User-agent: *
+Allow: /
+
+# Allow crawling of CSS and JS files
+Allow: /css/
+Allow: /js/
+Allow: /assets/
+
+# Sitemap location
+Sitemap: https://about.yashrma.xyz/sitemap.xml
+
+# Crawl delay (optional - be nice to servers)
+Crawl-delay: 1
+
+# Block access to any backup files or sensitive directories
+Disallow: /*.bak$
+Disallow: /*.tmp$
+Disallow: /.*
